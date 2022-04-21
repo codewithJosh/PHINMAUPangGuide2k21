@@ -1,7 +1,5 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Paint;
 import android.net.Uri;
@@ -9,10 +7,12 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class UniformActivity extends AppCompatActivity {
 
     ImageButton _backBtn;
-    TextView _linkCMA, _linkCITE,_linkCSS,_linkCEA,_linkCHS;
+    TextView _linkCMA, _linkCITE, _linkCSS, _linkCEA, _linkCHS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +20,19 @@ public class UniformActivity extends AppCompatActivity {
         setContentView(R.layout.activity_uniform);
 
         _backBtn = findViewById(R.id.btn_return);
-        _linkCMA =  findViewById(R.id.link_cma);
-        _linkCITE =  findViewById(R.id.link_cite);
-        _linkCSS =  findViewById(R.id.link_css);
-        _linkCEA =  findViewById(R.id.link_cea);
-        _linkCHS =  findViewById(R.id.link_chs);
+        _linkCMA = findViewById(R.id.link_cma);
+        _linkCITE = findViewById(R.id.link_cite);
+        _linkCSS = findViewById(R.id.link_css);
+        _linkCEA = findViewById(R.id.link_cea);
+        _linkCHS = findViewById(R.id.link_chs);
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
-        _linkCMA =  findViewById(R.id.link_cma);
-        _linkCITE =  findViewById(R.id.link_cite);
-        _linkCSS =  findViewById(R.id.link_css);
-        _linkCEA =  findViewById(R.id.link_cea);
-        _linkCHS =  findViewById(R.id.link_chs);
+        _linkCMA = findViewById(R.id.link_cma);
+        _linkCITE = findViewById(R.id.link_cite);
+        _linkCSS = findViewById(R.id.link_css);
+        _linkCEA = findViewById(R.id.link_cea);
+        _linkCHS = findViewById(R.id.link_chs);
 
         toUnderline(_linkCMA);
         toUnderline(_linkCITE);
@@ -50,11 +50,11 @@ public class UniformActivity extends AppCompatActivity {
 
     private void toURL(TextView textView) {
         Uri uri = Uri.parse(textView.getText().toString());
-        Intent intent= new Intent(Intent.ACTION_VIEW,uri);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
 
-    private void toUnderline(TextView textView){
+    private void toUnderline(TextView textView) {
         textView.setPaintFlags(textView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
     }

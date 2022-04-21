@@ -19,12 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0125" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:elevation="3dp"
 
         android:text="School Uniforms"
         android:textColor="?attr/colorOnPrimary"
@@ -32,6 +33,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/btn_return"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
@@ -44,10 +46,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,6 +68,7 @@
                 android:textColor="?attr/colorPrimary"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -82,35 +87,35 @@
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Register Online"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <!-- Step 2 -->
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 2:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Choose your department on the following then open the link"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <!-- A -->
             <TextView
@@ -118,66 +123,63 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="A. CMA DEPARTMENT"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="A. CMA DEPARTMENT"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/link_cma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="https://bit.ly/CMACustomizedUniformReservation"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
             <!-- B -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="B. CITE DEPARTMENT"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="B. CITE DEPARTMENT"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/link_cite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="https://bit.ly/CITECustomizedUniformReservation"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
             <!-- C -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="C. CSS DEPARTMENT"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="C. CSS DEPARTMENT"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/link_css"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="https://bit.ly/CSSCustomizedUniformReservation"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
 
             <!-- D -->
             <TextView
@@ -185,130 +187,127 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="D. CEA DEPARTMENT"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="D. CEA DEPARTMENT"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/link_cea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="https://bit.ly/CEACustomizedUniformReservation"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
             <!-- E -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="E. CHS DEPARTMENT"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="E. CHS DEPARTMENT"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/link_chs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="https://bit.ly/CHSCustomizedUniformReservation"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
 
             <!-- Step 3 -->
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 3:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Fill up the forms"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
             <!-- Step 4 -->
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 4:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Go to PHINMA University of Pangasinan and go to CMA Department 1st floor"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
             <!-- Step 5 -->
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 5:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Fall in line with the designated room and show your ID in the counter"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
             <!-- Step 6 -->
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 6:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="30dp"
                 android:text="Claim your uniforms"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                android:layout_marginBottom="30dp"
-                />
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
