@@ -1,68 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EnrollmentActivity">
 
-    <ImageButton
-        android:id="@+id/btn_return"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="?android:selectableItemBackgroundBorderless"
-        android:elevation="3dp"
-        android:foreground="@drawable/ic_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0125" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:elevation="3dp"
-
-        android:text="Enrollment"
-        android:textColor="?attr/colorOnPrimary"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btn_return"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:elevation="2dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/header_enrollment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:paddingTop="230dp"
-                android:paddingBottom="10dp"
+                android:layout_marginTop="230dp"
                 android:text="Enrollment Steps"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="25sp"
@@ -71,184 +28,204 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/colorSilverSand" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:text="Step 1:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
                 android:text="Register Online"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/link_enroll"
-                android:layout_width="match_parent"
+                android:id="@+id/nav_enrollment"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:text="https://bit.ly/SY2122PHINMAUPOnlineRegForm2"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:paddingVertical="10dp"
-                android:paddingStart="15dp"
-                android:singleLine="false"
+                android:layout_marginVertical="10dp"
                 android:text="Step 2:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:singleLine="false"
-                android:text="Pay your down payment through any of the ff:
-                \nGcash, ECPay (7Eleven, RD Pawnshop, etc) RCBC and Chinabank,upon receiving your Admission Number through your registered cellphone number."
+                android:layout_marginStart="15dp"
+                android:text="Pay your down payment through any of the ff:\nGcash, ECPay (7Eleven, RD Pawnshop, etc) RCBC and Chinabank,upon receiving your Admission Number through your registered cellphone number."
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:singleLine="false"
-                android:text="For Gcash Payment: "
+                android:text="For Gcash Payment:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:singleLine="false"
-                android:text="BILLER NAME: PHINMA UNIVERSITY OF PANGASINAN or PHINMA UPANG COLLEGE OF URDANETA
-\n\nStudent Number: Please use the provided Admission Number"
+                android:layout_marginStart="15dp"
+                android:text="BILLER NAME: PHINMA UNIVERSITY OF PANGASINAN or PHINMA UPANG COLLEGE OF URDANETA\n\nStudent Number: Please use the provided Admission Number"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:singleLine="false"
-                android:text="For ECPay Payment:  "
+                android:text="For ECPay Payment:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:singleLine="false"
+                android:layout_marginStart="15dp"
                 android:text="BILLER NAME: PHINMA EDUCATION"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:singleLine="false"
-                android:text="For Bank Deposit Payment: "
+                android:text="For Bank Deposit Payment:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:singleLine="false"
-                android:text="Account Name: PHINMA UNIVERSITY OF PANGASINAN, INC.
-\n\nRCBC Account Number: 9005208703
-
-\n\nCHINABANK Account Number: 3690102713"
+                android:layout_marginStart="15dp"
+                android:text="Account Name: PHINMA UNIVERSITY OF PANGASINAN, INC.\n\nRCBC Account Number: 9005208703\n\nCHINABANK Account Number: 3690102713"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:paddingVertical="10dp"
-                android:paddingStart="15dp"
+                android:layout_marginVertical="10dp"
                 android:text="Step 3:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:text="Kindly send your proof of payment to this link: "
+                android:layout_marginStart="15dp"
+                android:text="Kindly send your proof of payment to this link:"
                 android:textColor="?attr/colorOnSecondary"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/link_proof"
-                android:layout_width="match_parent"
+                android:id="@+id/nav_proof"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:text="https://bit.ly/UPPaymentForm2122"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:paddingVertical="10dp"
-                android:paddingStart="15dp"
+                android:layout_marginVertical="10dp"
                 android:text="Step 4:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
+                android:layout_marginStart="15dp"
                 android:text="Receive your Student Number and Schedule through email address provided in your registration."
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:text="\n\n#KasamaKoAngPHINMAEd
-\n#MakingLivesBetterThroughEducation\n\n"
-                android:textColor="?attr/colorSecondary"
-
                 android:textSize="16sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="40dp"
+                android:text="#KasamaKoAngPHINMAEd\n#MakingLivesBetterThroughEducation"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp" />
 
         </LinearLayout>
+
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv_header_enrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_enrollment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_enrollment"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

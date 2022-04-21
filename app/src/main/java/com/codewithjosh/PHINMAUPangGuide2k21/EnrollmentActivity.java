@@ -19,9 +19,9 @@ public class EnrollmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enrollment);
 
-        _backBtn = findViewById(R.id.btn_return);
-        _linkEnroll = findViewById(R.id.link_enroll);
-        _linkProof = findViewById(R.id.link_proof);
+        _backBtn = findViewById(R.id.btn_back);
+        _linkEnroll = findViewById(R.id.nav_enrollment);
+        _linkProof = findViewById(R.id.nav_proof);
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
