@@ -19,20 +19,20 @@ public class UniformActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uniform);
 
-        _backBtn = findViewById(R.id.btn_return);
-        _linkCMA = findViewById(R.id.link_cma);
-        _linkCITE = findViewById(R.id.link_cite);
-        _linkCSS = findViewById(R.id.link_css);
-        _linkCEA = findViewById(R.id.link_cea);
-        _linkCHS = findViewById(R.id.link_chs);
+        _backBtn = findViewById(R.id.btn_back);
+        _linkCMA = findViewById(R.id.nav_cma);
+        _linkCITE = findViewById(R.id.nav_cite);
+        _linkCSS = findViewById(R.id.nav_css);
+        _linkCEA = findViewById(R.id.nav_cea);
+        _linkCHS = findViewById(R.id.nav_chs);
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
-        _linkCMA = findViewById(R.id.link_cma);
-        _linkCITE = findViewById(R.id.link_cite);
-        _linkCSS = findViewById(R.id.link_css);
-        _linkCEA = findViewById(R.id.link_cea);
-        _linkCHS = findViewById(R.id.link_chs);
+        _linkCMA = findViewById(R.id.nav_cma);
+        _linkCITE = findViewById(R.id.nav_cite);
+        _linkCSS = findViewById(R.id.nav_css);
+        _linkCEA = findViewById(R.id.nav_cea);
+        _linkCHS = findViewById(R.id.nav_chs);
 
         toUnderline(_linkCMA);
         toUnderline(_linkCITE);
