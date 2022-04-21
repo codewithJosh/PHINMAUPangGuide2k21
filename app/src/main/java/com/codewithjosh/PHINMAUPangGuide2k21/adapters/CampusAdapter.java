@@ -56,14 +56,15 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView _campusImage;
-        TextView _campusText, _campusSpace;
+        TextView _campusText;
+        View _campusSpace;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            _campusImage = itemView.findViewById(R.id.campus_img);
-            _campusText = itemView.findViewById(R.id.campus_text);
-            _campusSpace = itemView.findViewById(R.id.campus_areaSpace);
+            _campusImage = itemView.findViewById(R.id.iv_campus);
+            _campusText = itemView.findViewById(R.id.tv_campus);
+            _campusSpace = itemView.findViewById(R.id.v_gap);
         }
 
         public void setListener(int position) {
