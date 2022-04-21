@@ -1,6 +1,7 @@
 package com.codewithjosh.PHINMAUPangGuide2k21.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.codewithjosh.PHINMAUPangGuide2k21.R;
+import com.codewithjosh.PHINMAUPangGuide2k21.ViewImageActivity;
 import com.codewithjosh.PHINMAUPangGuide2k21.models.CampusModel;
 
 import java.util.List;
@@ -42,6 +44,8 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
             holder._campusSpace.setVisibility(View.GONE);
         }
 
+        holder.setListener(position);
+
     }
 
     @Override
@@ -60,6 +64,17 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
             _campusImage = itemView.findViewById(R.id.campus_img);
             _campusText = itemView.findViewById(R.id.campus_text);
             _campusSpace = itemView.findViewById(R.id.campus_areaSpace);
+        }
+
+        public void setListener(int position) {
+            itemView.setOnClickListener(view -> {
+                Intent i = new Intent(mContext, ViewImageActivity.class);
+                int itemPosition = getLayoutPosition();
+                i.putExtra("position", itemPosition );
+                i.putExtra("name", mList.get(position).getCampus_name());
+                i.putExtra("image", mList.get(position).getCampus_image());
+                mContext.startActivity(i);
+            });
         }
 
     }

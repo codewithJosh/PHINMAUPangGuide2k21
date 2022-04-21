@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PHINMAUPangGuide">
         <activity
+            android:name=".ViewImageActivity"
+            android:exported="false" />
+        <activity
             android:name=".CampusActivity"
             android:exported="false" />
         <activity
