@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CampusActivity">
+
     <ImageButton
         android:id="@+id/btn_return"
         android:layout_width="30dp"
@@ -18,12 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0125" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:elevation="3dp"
 
         android:text="Inside Campus"
         android:textColor="?attr/colorOnPrimary"
@@ -31,6 +33,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/btn_return"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
@@ -43,9 +46,10 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/campusRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="15dp"/>
+        android:paddingBottom="15dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

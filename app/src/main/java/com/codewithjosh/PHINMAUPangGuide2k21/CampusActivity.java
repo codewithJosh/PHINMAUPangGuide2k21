@@ -1,12 +1,12 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
+import android.os.Bundle;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-
-import android.os.Bundle;
-import android.widget.ImageButton;
 
 import com.codewithjosh.PHINMAUPangGuide2k21.adapters.CampusAdapter;
 import com.codewithjosh.PHINMAUPangGuide2k21.models.CampusModel;
@@ -28,7 +28,7 @@ public class CampusActivity extends AppCompatActivity {
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
-        _recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
+        _recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         _recyclerView.setItemAnimator(new DefaultItemAnimator());
         _recyclerView.setHasFixedSize(true);
 

@@ -1,11 +1,11 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ViewImageActivity extends AppCompatActivity {
 
@@ -29,7 +29,7 @@ public class ViewImageActivity extends AppCompatActivity {
         String _campusName = "";
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null){
+        if (extras != null) {
             _campusName = extras.getString("name");
             _position = extras.getInt("position");
             _Img = extras.getInt("image");
@@ -38,7 +38,7 @@ public class ViewImageActivity extends AppCompatActivity {
         _viewText.setText(_campusName);
         _viewImage.setImageResource(_Img);
 
-        if ((_position%2) ==0){
+        if ((_position % 2) == 0) {
             _viewText.setTextColor(getResources().getColor(R.color.colorSpaceCadet));
         }
 

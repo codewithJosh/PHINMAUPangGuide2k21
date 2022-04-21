@@ -30,7 +30,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus,parent,false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent, false);
         return new ViewHolder(view);
     }
 
@@ -40,7 +40,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
         holder._campusText.setText(mList.get(position).getCampus_name());
         holder._campusImage.setImageResource(mList.get(position).getCampus_image());
 
-        if(!(position <= 1) ){
+        if (!(position <= 1)) {
             holder._campusSpace.setVisibility(View.GONE);
         }
 
@@ -56,7 +56,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView _campusImage;
-        TextView _campusText,_campusSpace;
+        TextView _campusText, _campusSpace;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -70,7 +70,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
             itemView.setOnClickListener(view -> {
                 Intent i = new Intent(mContext, ViewImageActivity.class);
                 int itemPosition = getLayoutPosition();
-                i.putExtra("position", itemPosition );
+                i.putExtra("position", itemPosition);
                 i.putExtra("name", mList.get(position).getCampus_name());
                 i.putExtra("image", mList.get(position).getCampus_image());
                 mContext.startActivity(i);
