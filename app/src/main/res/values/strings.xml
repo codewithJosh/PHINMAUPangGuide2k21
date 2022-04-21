@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PHINMA UPang Guide</string>
+    <string name="text_enrollment">Enrollment</string>
+    <string name="text_button_tap">Tap to View</string>
+    <string name="text_uniform">School Uniforms</string>
+    <string name="text_payment">Pay School Fees</string>
+    <string name="text_campus">Inside Campus</string>
 </resources>

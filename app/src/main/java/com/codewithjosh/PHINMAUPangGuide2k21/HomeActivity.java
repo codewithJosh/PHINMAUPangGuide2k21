@@ -15,10 +15,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        _viewEnrollment = findViewById(R.id.view_Enrollment);
-        _viewUniform = findViewById(R.id.view_uniforms);
-        _viewFees = findViewById(R.id.view_Fees);
-        _viewCampus = findViewById(R.id.view_campus);
+        _viewEnrollment = findViewById(R.id.nav_enrollment);
+        _viewUniform = findViewById(R.id.nav_uniform);
+        _viewFees = findViewById(R.id.nav_payment);
+        _viewCampus = findViewById(R.id.nav_campus);
 
         _viewEnrollment.setOnClickListener(view -> {
             startActivity(new Intent(HomeActivity.this, EnrollmentActivity.class));
