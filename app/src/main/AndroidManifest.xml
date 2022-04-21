@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PHINMAUPangGuide">
         <activity
+            android:name=".CampusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UniformActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnrollmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
