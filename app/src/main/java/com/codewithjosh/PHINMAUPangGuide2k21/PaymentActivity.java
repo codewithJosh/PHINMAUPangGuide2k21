@@ -14,7 +14,7 @@ public class PaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        _backBtn = findViewById(R.id.btn_return);
+        _backBtn = findViewById(R.id.btn_back);
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
