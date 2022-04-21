@@ -23,9 +23,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:elevation="3dp"
 
         android:text="Enrollment"
         android:textColor="?attr/colorOnPrimary"
@@ -84,14 +84,15 @@
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Register Online"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/link_enroll"
                 android:layout_width="match_parent"
@@ -99,115 +100,113 @@
                 android:layout_marginHorizontal="15dp"
                 android:text="https://bit.ly/SY2122PHINMAUPOnlineRegForm2"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <TextView
-                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:singleLine="false"
                 android:text="Step 2:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:singleLine="false"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="Pay your down payment through any of the ff:
                 \nGcash, ECPay (7Eleven, RD Pawnshop, etc) RCBC and Chinabank,upon receiving your Admission Number through your registered cellphone number."
-                android:textSize="16sp"
                 android:textColor="?attr/colorOnSecondary"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="For Gcash Payment: "
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="For Gcash Payment: "
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="BILLER NAME: PHINMA UNIVERSITY OF PANGASINAN or PHINMA UPANG COLLEGE OF URDANETA
 \n\nStudent Number: Please use the provided Admission Number"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
+                android:singleLine="false"
                 android:text="For ECPay Payment:  "
-                android:textSize="16sp"
-                android:textStyle="bold"
                 android:textColor="?attr/colorSecondary"
-                android:singleLine="false"
-                />
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
-                android:text="BILLER NAME: PHINMA EDUCATION"
-                android:textSize="16sp"
-                android:textColor="?attr/colorOnSecondary"
                 android:singleLine="false"
-                />
+                android:text="BILLER NAME: PHINMA EDUCATION"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:text="For Bank Deposit Payment: "
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="?attr/colorSecondary"
                 android:singleLine="false"
-                />
+                android:text="For Bank Deposit Payment: "
+                android:textColor="?attr/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:singleLine="false"
                 android:text="Account Name: PHINMA UNIVERSITY OF PANGASINAN, INC.
 \n\nRCBC Account Number: 9005208703
 
 \n\nCHINABANK Account Number: 3690102713"
-                android:textSize="16sp"
                 android:textColor="?attr/colorOnSecondary"
-                android:singleLine="false"
-                />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
                 android:text="Step 3:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginTop="15dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Kindly send your proof of payment to this link: "
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/link_proof"
                 android:layout_width="match_parent"
@@ -215,39 +214,38 @@
                 android:layout_marginHorizontal="15dp"
                 android:text="https://bit.ly/UPPaymentForm2122"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
                 android:paddingVertical="10dp"
+                android:paddingStart="15dp"
                 android:text="Step 4:"
                 android:textColor="?attr/colorSecondary"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginTop="15dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="Receive your Student Number and Schedule through email address provided in your registration."
-                android:textSize="16sp"
                 android:textColor="?attr/colorOnSecondary"
+                android:textSize="16sp"
 
                 />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:text="\n\n#KasamaKoAngPHINMAEd
 \n#MakingLivesBetterThroughEducation\n\n"
-                android:textSize="16sp"
-
                 android:textColor="?attr/colorSecondary"
-                />
 
+                android:textSize="16sp" />
 
 
         </LinearLayout>
