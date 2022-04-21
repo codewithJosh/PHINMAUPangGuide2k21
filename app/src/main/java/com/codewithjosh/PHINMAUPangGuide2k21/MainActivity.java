@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _findMore = findViewById(R.id.button_findMore);
+        _findMore = findViewById(R.id.nav_home);
 
         _findMore.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, HomeActivity.class));

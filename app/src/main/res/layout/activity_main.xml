@@ -6,65 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_header_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header_main" />
 
-    <TextView
-        android:id="@+id/title_welcome"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="15dp"
-        android:paddingTop="15dp"
-        android:text="WELCOME to"
-        android:textColor="?attr/colorSecondary"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/iv_header_main">
 
-    <TextView
-        android:id="@+id/title_UPANG"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="15dp"
-        android:text="PHINMA UPANG"
-        android:textColor="?attr/colorPrimary"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_welcome" />
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME to"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_header_main" />
 
-    <TextView
-        android:id="@+id/subtitle_UPANG"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="15dp"
-        android:paddingTop="10dp"
-        android:text="Making lives better through education"
-        android:textColor="@color/colorGray"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_UPANG" />
+        <TextView
+            android:id="@+id/tv_phinma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHINMA UPANG"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Making lives better through education"
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_phinma" />
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button_findMore"
+        android:id="@+id/nav_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
@@ -76,15 +74,14 @@
         android:textAllCaps="false"
         android:textColor="?attr/colorPrimary"
         android:textSize="14sp"
-        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/iv_under_circle"
+        app:backgroundTint="@null" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/iv_under_circle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
