@@ -20,29 +20,27 @@ import java.util.List;
 public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder> {
 
     public Context mContext;
-    public List<CampusModel> mList;
+    public List<CampusModel> mCampus;
 
-    public CampusAdapter(Context mContext, List<CampusModel> mList) {
+    public CampusAdapter(Context mContext, List<CampusModel> mCampus) {
         this.mContext = mContext;
-        this.mList = mList;
+        this.mCampus = mCampus;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent,false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder._campusText.setText(mList.get(position).getCampus_name());
-        holder._campusImage.setImageResource(mList.get(position).getCampus_image());
+        holder.iv_campus_image.setImageResource(mCampus.get(position).getCampus_image());
+        holder.tv_campus_name.setText(mCampus.get(position).getCampus_name());
 
-        if (!(position <= 1)) {
-            holder._campusSpace.setVisibility(View.GONE);
-        }
+        if (!(position <= 1)) holder.v_gap.setVisibility(View.GONE);
 
         holder.setListener(position);
 
@@ -50,32 +48,36 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return mList.size();
+        return mCampus.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView _campusImage;
-        TextView _campusText;
-        View _campusSpace;
+        ImageView iv_campus_image;
+        TextView tv_campus_name;
+        View v_gap;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            _campusImage = itemView.findViewById(R.id.iv_campus);
-            _campusText = itemView.findViewById(R.id.tv_campus);
-            _campusSpace = itemView.findViewById(R.id.v_gap);
+            iv_campus_image = itemView.findViewById(R.id.iv_campus);
+            tv_campus_name = itemView.findViewById(R.id.tv_campus);
+            v_gap = itemView.findViewById(R.id.v_gap);
+
         }
 
         public void setListener(int position) {
-            itemView.setOnClickListener(view -> {
+
+            itemView.setOnClickListener(v -> {
+
                 Intent i = new Intent(mContext, ViewImageActivity.class);
                 int itemPosition = getLayoutPosition();
-                i.putExtra("position", itemPosition);
-                i.putExtra("name", mList.get(position).getCampus_name());
-                i.putExtra("image", mList.get(position).getCampus_image());
+                i.putExtra("i_position", itemPosition );
+                i.putExtra("s_campus_name", mCampus.get(position).getCampus_name());
+                i.putExtra("i_campus_image", mCampus.get(position).getCampus_image());
                 mContext.startActivity(i);
             });
+
         }
 
     }
