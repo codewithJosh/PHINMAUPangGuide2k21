@@ -1,24 +1,24 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity {
 
-    Button _findMore;
+    Button nav_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _findMore = findViewById(R.id.nav_home);
+        nav_home = findViewById(R.id.nav_home);
 
-        _findMore.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+        nav_home.setOnClickListener(v -> {
+            startActivity(new Intent(this, HomeActivity.class));
             finish();
         });
 
