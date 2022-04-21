@@ -23,8 +23,8 @@ public class CampusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_campus);
 
-        _backBtn = findViewById(R.id.btn_return);
-        _recyclerView = findViewById(R.id.campusRecyclerView);
+        _backBtn = findViewById(R.id.btn_back);
+        _recyclerView = findViewById(R.id.recycler_campus);
 
         _backBtn.setOnClickListener(view -> onBackPressed());
 
