@@ -15,34 +15,34 @@ import java.util.ArrayList;
 
 public class CampusActivity extends AppCompatActivity {
 
-    ImageButton _backBtn;
-    RecyclerView _recyclerView;
+    ImageButton btn_back;
+    RecyclerView recycler_campus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_campus);
 
-        _backBtn = findViewById(R.id.btn_return);
-        _recyclerView = findViewById(R.id.campusRecyclerView);
+        btn_back = findViewById(R.id.btn_back);
+        recycler_campus = findViewById(R.id.recycler_campus);
 
-        _backBtn.setOnClickListener(view -> onBackPressed());
+        btn_back.setOnClickListener(v -> onBackPressed());
 
-        _recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-        _recyclerView.setItemAnimator(new DefaultItemAnimator());
-        _recyclerView.setHasFixedSize(true);
+        recycler_campus.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        recycler_campus.setItemAnimator(new DefaultItemAnimator());
+        recycler_campus.setHasFixedSize(true);
 
-        ArrayList<CampusModel> campusModels = new ArrayList<>();
-        campusModels.add(new CampusModel(R.drawable.img_campus, "CAMPUS"));
-        campusModels.add(new CampusModel(R.drawable.img_cma, "CMA BUILDING"));
-        campusModels.add(new CampusModel(R.drawable.img_basic_ed, "BASIC ED BUILDING"));
-        campusModels.add(new CampusModel(R.drawable.img_mba, "MBA BUILDING"));
-        campusModels.add(new CampusModel(R.drawable.img_nh, "NH BUILDING"));
-        campusModels.add(new CampusModel(R.drawable.img_cite, "CITE BUILDING"));
-        campusModels.add(new CampusModel(R.drawable.img_sp, "STUDENT PLAZA"));
-        campusModels.add(new CampusModel(R.drawable.img_hallway, "HALLWAY"));
+        ArrayList<CampusModel> campusModel = new ArrayList<>();
+        campusModel.add(new CampusModel(R.drawable.img_campus, "CAMPUS"));
+        campusModel.add(new CampusModel(R.drawable.img_cma, "CMA BUILDING"));
+        campusModel.add(new CampusModel(R.drawable.img_basic_ed, "BASIC ED BUILDING"));
+        campusModel.add(new CampusModel(R.drawable.img_mba, "MBA BUILDING"));
+        campusModel.add(new CampusModel(R.drawable.img_nh, "NH BUILDING"));
+        campusModel.add(new CampusModel(R.drawable.img_cite, "CITE BUILDING"));
+        campusModel.add(new CampusModel(R.drawable.img_sp, "STUDENT PLAZA"));
+        campusModel.add(new CampusModel(R.drawable.img_hallway, "HALLWAY"));
 
-        _recyclerView.setAdapter(new CampusAdapter(CampusActivity.this, campusModels));
+        recycler_campus.setAdapter(new CampusAdapter(this, campusModel));
 
     }
 

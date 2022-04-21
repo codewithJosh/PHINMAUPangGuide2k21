@@ -7,40 +7,35 @@
     tools:context=".ViewImageActivity">
 
     <ImageButton
-        android:id="@+id/btn_return"
+        android:id="@+id/btn_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="?android:selectableItemBackgroundBorderless"
-        android:elevation="3dp"
-        android:foreground="@drawable/ic_back"
-        android:foregroundTint="?attr/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="?attr/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0125" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/viewImage"
+        android:id="@+id/iv_campus_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/viewText"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_campus_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textAlignment="center"
         android:textColor="?attr/colorPrimary"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/viewImage" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_campus_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

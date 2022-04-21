@@ -7,16 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PaymentActivity extends AppCompatActivity {
 
-    ImageButton _backBtn;
+    ImageButton btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        _backBtn = findViewById(R.id.btn_return);
+        btn_back = findViewById(R.id.btn_back);
 
-        _backBtn.setOnClickListener(view -> onBackPressed());
+        btn_back.setOnClickListener(v -> onBackPressed());
 
     }
+
 }

@@ -8,33 +8,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button _viewEnrollment, _viewUniform, _viewFees, _viewCampus;
+    Button nav_enrollment, nav_uniform, nav_payment, nav_campus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        _viewEnrollment = findViewById(R.id.view_Enrollment);
-        _viewUniform = findViewById(R.id.view_uniforms);
-        _viewFees = findViewById(R.id.view_Fees);
-        _viewCampus = findViewById(R.id.view_campus);
+        nav_enrollment = findViewById(R.id.nav_enrollment);
+        nav_uniform = findViewById(R.id.nav_uniform);
+        nav_payment = findViewById(R.id.nav_payment);
+        nav_campus = findViewById(R.id.nav_campus);
 
-        _viewEnrollment.setOnClickListener(view -> {
-            startActivity(new Intent(HomeActivity.this, EnrollmentActivity.class));
-        });
+        nav_enrollment.setOnClickListener(v -> startActivity(new Intent(this, EnrollmentActivity.class)));
 
-        _viewUniform.setOnClickListener(view -> {
-            startActivity(new Intent(HomeActivity.this, UniformActivity.class));
-        });
+        nav_uniform.setOnClickListener(v -> startActivity(new Intent(this, UniformActivity.class)));
 
-        _viewFees.setOnClickListener(view -> {
-            startActivity(new Intent(HomeActivity.this, PaymentActivity.class));
-        });
+        nav_payment.setOnClickListener(v -> startActivity(new Intent(this, PaymentActivity.class)));
 
-        _viewCampus.setOnClickListener(view -> {
-            startActivity(new Intent(HomeActivity.this, CampusActivity.class));
-        });
+        nav_campus.setOnClickListener(v -> startActivity(new Intent(this, CampusActivity.class)));
 
     }
 

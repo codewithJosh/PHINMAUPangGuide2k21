@@ -8,17 +8,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button _findMore;
+    Button nav_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _findMore = findViewById(R.id.button_findMore);
+        nav_home = findViewById(R.id.nav_home);
 
-        _findMore.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+        nav_home.setOnClickListener(v -> {
+            startActivity(new Intent(this, HomeActivity.class));
             finish();
         });
 

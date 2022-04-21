@@ -2,8 +2,8 @@ package com.codewithjosh.PHINMAUPangGuide2k21.models;
 
 public class CampusModel {
 
-    int campus_image;
-    String campus_name;
+    private int campus_image;
+    private String campus_name;
 
     public CampusModel(int campus_image, String campus_name) {
         this.campus_image = campus_image;
