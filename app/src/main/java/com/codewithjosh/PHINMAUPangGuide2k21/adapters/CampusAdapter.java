@@ -30,7 +30,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent,false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent, false);
         return new ViewHolder(view);
     }
 
@@ -72,7 +72,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
 
                 Intent i = new Intent(mContext, ViewImageActivity.class);
                 int itemPosition = getLayoutPosition();
-                i.putExtra("i_position", itemPosition );
+                i.putExtra("i_position", itemPosition);
                 i.putExtra("s_campus_name", mCampus.get(position).getCampus_name());
                 i.putExtra("i_campus_image", mCampus.get(position).getCampus_image());
                 mContext.startActivity(i);

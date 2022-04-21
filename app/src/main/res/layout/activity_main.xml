@@ -20,9 +20,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_header_main">
 
@@ -74,11 +74,11 @@
         android:textAllCaps="false"
         android:textColor="?attr/colorPrimary"
         android:textSize="14sp"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/iv_under_circle"
-        app:backgroundTint="@null" />
+        app:layout_constraintTop_toTopOf="@+id/iv_under_circle" />
 
     <ImageView
         android:id="@+id/iv_under_circle"

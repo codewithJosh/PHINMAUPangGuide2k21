@@ -1,13 +1,13 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class UniformActivity extends AppCompatActivity {
 
