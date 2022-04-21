@@ -1,5 +1,7 @@
 package com.codewithjosh.PHINMAUPangGuide2k21;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.graphics.Paint;
 import android.net.Uri;
@@ -7,55 +9,47 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class UniformActivity extends AppCompatActivity {
 
-    ImageButton _backBtn;
-    TextView _linkCMA, _linkCITE, _linkCSS, _linkCEA, _linkCHS;
+    ImageButton btn_back;
+    TextView nav_cma, nav_cite, nav_css, nav_cea, nav_chs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uniform);
 
-        _backBtn = findViewById(R.id.btn_back);
-        _linkCMA = findViewById(R.id.nav_cma);
-        _linkCITE = findViewById(R.id.nav_cite);
-        _linkCSS = findViewById(R.id.nav_css);
-        _linkCEA = findViewById(R.id.nav_cea);
-        _linkCHS = findViewById(R.id.nav_chs);
+        btn_back = findViewById(R.id.btn_back);
 
-        _backBtn.setOnClickListener(view -> onBackPressed());
+        nav_cma = findViewById(R.id.nav_cma);
+        nav_cite = findViewById(R.id.nav_cite);
+        nav_css = findViewById(R.id.nav_css);
+        nav_cea = findViewById(R.id.nav_cea);
+        nav_chs = findViewById(R.id.nav_chs);
 
-        _linkCMA = findViewById(R.id.nav_cma);
-        _linkCITE = findViewById(R.id.nav_cite);
-        _linkCSS = findViewById(R.id.nav_css);
-        _linkCEA = findViewById(R.id.nav_cea);
-        _linkCHS = findViewById(R.id.nav_chs);
+        btn_back.setOnClickListener(v -> onBackPressed());
 
-        toUnderline(_linkCMA);
-        toUnderline(_linkCITE);
-        toUnderline(_linkCSS);
-        toUnderline(_linkCEA);
-        toUnderline(_linkCHS);
+        nav_cma.setOnClickListener(v -> goToURL(nav_cma));
 
-        _linkCMA.setOnClickListener(view -> toURL(_linkCMA));
-        _linkCITE.setOnClickListener(view -> toURL(_linkCITE));
-        _linkCSS.setOnClickListener(view -> toURL(_linkCSS));
-        _linkCEA.setOnClickListener(view -> toURL(_linkCEA));
-        _linkCHS.setOnClickListener(view -> toURL(_linkCHS));
+        nav_cite.setOnClickListener(v -> goToURL(nav_cite));
+
+        nav_css.setOnClickListener(v -> goToURL(nav_css));
+
+        nav_cea.setOnClickListener(v -> goToURL(nav_cea));
+
+        nav_chs.setOnClickListener(v -> goToURL(nav_chs));
 
     }
 
-    private void toURL(TextView textView) {
-        Uri uri = Uri.parse(textView.getText().toString());
+    private void goToURL(final TextView tv) {
+
+        tv.setPaintFlags(tv.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
+        final String s = tv.getText().toString();
+
+        Uri uri = Uri.parse(s);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
-    }
-
-    private void toUnderline(TextView textView) {
-        textView.setPaintFlags(textView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
     }
 
