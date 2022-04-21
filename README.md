@@ -1,2 +1,2 @@
 # PHINMAUPangGuide2k21
-[BUILDING]
+> _Coming Soon_
