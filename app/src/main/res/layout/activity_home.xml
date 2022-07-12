@@ -26,7 +26,7 @@
         android:textColor="?attr/colorPrimary"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,8 +36,8 @@
         android:text="How Can I help you?"
         android:textColor="?attr/colorSecondary"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/iv_logo"
-        app:layout_constraintTop_toBottomOf="@+id/tv_im" />
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/tv_im" />
 
     <View
         android:id="@+id/v_horizontal_line"
@@ -46,7 +46,7 @@
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="5dp"
         android:background="@color/colorSilverSand"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_enrollment"
@@ -58,7 +58,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_horizontal_line">
+        app:layout_constraintTop_toBottomOf="@id/v_horizontal_line">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_enrollment"
+                app:layout_constraintStart_toEndOf="@id/iv_enrollment"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
@@ -101,10 +101,9 @@
                 android:textAllCaps="false"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="13sp"
-                app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_enrollment"
-                app:layout_constraintTop_toBottomOf="@+id/tv_enrollment" />
+                app:layout_constraintStart_toEndOf="@id/iv_enrollment"
+                app:layout_constraintTop_toBottomOf="@id/tv_enrollment" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -120,7 +119,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_enrollment">
+        app:layout_constraintTop_toBottomOf="@id/cv_enrollment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -148,7 +147,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_uniform"
+                app:layout_constraintStart_toEndOf="@id/iv_uniform"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
@@ -163,10 +162,9 @@
                 android:textAllCaps="false"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="13sp"
-                app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_uniform"
-                app:layout_constraintTop_toBottomOf="@+id/tv_uniform" />
+                app:layout_constraintStart_toEndOf="@id/iv_uniform"
+                app:layout_constraintTop_toBottomOf="@id/tv_uniform" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -182,7 +180,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_uniform">
+        app:layout_constraintTop_toBottomOf="@id/cv_uniform">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -210,7 +208,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_payment"
+                app:layout_constraintStart_toEndOf="@id/iv_payment"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
@@ -225,11 +223,10 @@
                 android:textAllCaps="false"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="13sp"
-                app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/iv_payment"
-                app:layout_constraintTop_toBottomOf="@+id/tv_payment" />
+                app:layout_constraintStart_toEndOf="@id/iv_payment"
+                app:layout_constraintTop_toBottomOf="@id/tv_payment" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -245,7 +242,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_payment">
+        app:layout_constraintTop_toBottomOf="@id/cv_payment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -273,7 +270,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_campus"
+                app:layout_constraintStart_toEndOf="@id/iv_campus"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
@@ -288,11 +285,10 @@
                 android:textAllCaps="false"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="13sp"
-                app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/iv_campus"
-                app:layout_constraintTop_toBottomOf="@+id/tv_campus" />
+                app:layout_constraintStart_toEndOf="@id/iv_campus"
+                app:layout_constraintTop_toBottomOf="@id/tv_campus" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
