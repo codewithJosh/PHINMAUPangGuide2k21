@@ -8,21 +8,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button nav_home;
+    Button navHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nav_home = findViewById(R.id.nav_home);
+        initViews();
+        buildButtons();
 
-        nav_home.setOnClickListener(v -> {
-            startActivity(new Intent(this, HomeActivity.class));
-            finish();
-        });
+    }
+
+    private void initViews()
+    {
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorBrunswickGreen));
+
+        navHome = findViewById(R.id.nav_home);
+
+    }
+
+    private void buildButtons()
+    {
+
+        navHome.setOnClickListener(v -> {
+
+            startActivity(new Intent(this, HomeActivity.class));
+            finish();
+
+        });
 
     }
 
