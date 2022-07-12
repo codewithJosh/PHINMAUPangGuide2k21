@@ -77,7 +77,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nav_cma"
+                android:id="@+id/nav_c_m_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -96,7 +96,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nav_cite"
+                android:id="@+id/nav_c_i_t_e"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -115,7 +115,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nav_css"
+                android:id="@+id/nav_c_s_s"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -134,7 +134,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nav_cea"
+                android:id="@+id/nav_c_e_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -153,7 +153,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/nav_chs"
+                android:id="@+id/nav_c_h_s"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
