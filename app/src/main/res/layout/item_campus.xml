@@ -23,7 +23,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v_gap" />
+        app:layout_constraintTop_toBottomOf="@id/v_gap" />
 
     <TextView
         android:id="@+id/tv_campus"
@@ -34,6 +34,6 @@
         android:textColor="?attr/colorOnPrimary"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_campus" />
+        app:layout_constraintBottom_toBottomOf="@id/iv_campus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
