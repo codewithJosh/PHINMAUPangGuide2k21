@@ -62,7 +62,7 @@ public class ViewImageActivity extends AppCompatActivity {
         tvCampusName.setText(campusName);
         ivCampusImage.setImageResource(campusImage);
 
-        if (campusId % 2 == 0) tvCampusName.setTextColor(getResources().getColor(R.color.colorSpaceCadet));
+        if (campusId % 2 == 0) tvCampusName.setTextColor(getResources().getColor(R.color.color_space_cadet));
 
         btnBack.setOnClickListener(v -> onBackPressed());
 

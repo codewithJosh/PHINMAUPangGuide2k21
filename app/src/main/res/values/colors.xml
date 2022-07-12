@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorBlack_FF">#FF000000</color>
-    <color name="colorWhite_FF">#FFFFFFFF</color>
-    <color name="colorDarkSpringGreen">#116A44</color>
-    <color name="colorSpaceCadet">#22344C</color>
-    <color name="colorGray">#7D7D7D</color>
-    <color name="colorBrunswickGreen">#175847</color>
-    <color name="colorSilverSand">#C3C3C3</color>
-    <color name="colorDarkSpringGreen_48">#48116A44</color>
-    <color name="colorSpaceCadet_80">#8022344C</color>
+    <color name="color_black_ff">#FF000000</color>
+    <color name="color_white_ff">#FFFFFFFF</color>
+    <color name="color_dark_spring_green">#116A44</color>
+    <color name="color_space_cadet">#22344C</color>
+    <color name="color_gray">#7D7D7D</color>
+    <color name="color_brunswick_green">#175847</color>
+    <color name="color_silver_sand">#C3C3C3</color>
+    <color name="color_dark_spring_green_48">#48116A44</color>
+    <color name="color_space_cadet_80">#8022344C</color>
 </resources>

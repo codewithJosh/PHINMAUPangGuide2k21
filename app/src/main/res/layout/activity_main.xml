@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Making lives better through education"
-            android:textColor="@color/colorGray"
+            android:textColor="@color/color_gray"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"

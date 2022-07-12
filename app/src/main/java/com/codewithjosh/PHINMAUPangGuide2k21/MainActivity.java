@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews()
     {
 
-        getWindow().setNavigationBarColor(getResources().getColor(R.color.colorBrunswickGreen));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.color_brunswick_green));
 
         navHome = findViewById(R.id.nav_home);
 
