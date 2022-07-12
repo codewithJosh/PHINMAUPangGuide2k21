@@ -11,33 +11,50 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class UniformActivity extends AppCompatActivity {
 
-    ImageButton btn_back;
-    TextView nav_cma, nav_cite, nav_css, nav_cea, nav_chs;
+    ImageButton btnBack;
+    TextView navCEA;
+    TextView navCHS;
+    TextView navCITE;
+    TextView navCMA;
+    TextView navCSS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uniform);
 
-        btn_back = findViewById(R.id.btn_back);
+        initViews();
+        buildButtons();
 
-        nav_cma = findViewById(R.id.nav_cma);
-        nav_cite = findViewById(R.id.nav_cite);
-        nav_css = findViewById(R.id.nav_css);
-        nav_cea = findViewById(R.id.nav_cea);
-        nav_chs = findViewById(R.id.nav_chs);
+    }
 
-        btn_back.setOnClickListener(v -> onBackPressed());
+    private void initViews()
+    {
 
-        nav_cma.setOnClickListener(v -> goToURL(nav_cma));
+        btnBack = findViewById(R.id.btn_back);
+        navCEA = findViewById(R.id.nav_c_e_a);
+        navCHS = findViewById(R.id.nav_c_h_s);
+        navCITE = findViewById(R.id.nav_c_i_t_e);
+        navCMA = findViewById(R.id.nav_c_m_a);
+        navCSS = findViewById(R.id.nav_c_s_s);
 
-        nav_cite.setOnClickListener(v -> goToURL(nav_cite));
+    }
 
-        nav_css.setOnClickListener(v -> goToURL(nav_css));
+    private void buildButtons()
+    {
 
-        nav_cea.setOnClickListener(v -> goToURL(nav_cea));
+        btnBack.setOnClickListener(v -> onBackPressed());
 
-        nav_chs.setOnClickListener(v -> goToURL(nav_chs));
+        navCEA.setOnClickListener(v -> goToURL(navCEA));
+
+        navCHS.setOnClickListener(v -> goToURL(navCHS));
+
+        navCITE.setOnClickListener(v -> goToURL(navCITE));
+
+        navCMA.setOnClickListener(v -> goToURL(navCMA));
+
+        navCSS.setOnClickListener(v -> goToURL(navCSS));
 
     }
 
@@ -45,10 +62,10 @@ public class UniformActivity extends AppCompatActivity {
 
         tv.setPaintFlags(tv.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        final String s = tv.getText().toString();
+        final String url = tv.getText().toString();
 
-        Uri uri = Uri.parse(s);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        final Uri uri = Uri.parse(url);
+        final Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 
     }
