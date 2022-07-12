@@ -2,6 +2,7 @@ package com.codewithjosh.PHINMAUPangGuide2k21.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,64 +20,86 @@ import java.util.List;
 
 public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder> {
 
-    public Context mContext;
-    public List<CampusModel> mCampus;
+    public Context context;
+    public List<CampusModel> campuses;
+    SharedPreferences.Editor editor;
 
-    public CampusAdapter(Context mContext, List<CampusModel> mCampus) {
-        this.mContext = mContext;
-        this.mCampus = mCampus;
+    public CampusAdapter(final Context context, final List<CampusModel> campuses) {
+
+        this.context = context;
+        this.campuses = campuses;
+
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.item_campus, parent, false);
+
+        View view = LayoutInflater.from(context).inflate(R.layout.item_campus, parent, false);
         return new ViewHolder(view);
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.iv_campus_image.setImageResource(mCampus.get(position).getCampus_image());
-        holder.tv_campus_name.setText(mCampus.get(position).getCampus_name());
+        final CampusModel campus = campuses.get(position);
 
-        if (!(position <= 1)) holder.v_gap.setVisibility(View.GONE);
+//        initViews
+        final ImageView ivCampusImage = holder.ivCampusImage;
+        final TextView tvCampusName = holder.tvCampusName;
+        final View vGap = holder.vGap;
 
-        holder.setListener(position);
+//        load
+        final int campusImage = campus.getCampus_image();
+        final String campusName = campus.getCampus_name();
+
+        initSharedPref();
+
+        ivCampusImage.setImageResource(campusImage);
+        tvCampusName.setText(campusName);
+
+        if (position > 1) vGap.setVisibility(View.GONE);
+
+        holder.itemView.setOnClickListener(v -> {
+
+            editor.putInt("campus_id", position);
+            editor.putInt("campus_image", campusImage);
+            editor.putString("campus_name", campusName);
+            editor.apply();
+            context.startActivity(new Intent(context, ViewImageActivity.class));
+
+        });
+
+    }
+
+    private void initSharedPref()
+    {
+
+        editor = context.getSharedPreferences("user", Context.MODE_PRIVATE).edit();
 
     }
 
     @Override
     public int getItemCount() {
-        return mCampus.size();
+
+        return campuses.size();
+
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView iv_campus_image;
-        TextView tv_campus_name;
-        View v_gap;
+        public ImageView ivCampusImage;
+        public TextView tvCampusName;
+        public View vGap;
 
         public ViewHolder(@NonNull View itemView) {
+
             super(itemView);
 
-            iv_campus_image = itemView.findViewById(R.id.iv_campus);
-            tv_campus_name = itemView.findViewById(R.id.tv_campus);
-            v_gap = itemView.findViewById(R.id.v_gap);
-
-        }
-
-        public void setListener(int position) {
-
-            itemView.setOnClickListener(v -> {
-
-                Intent i = new Intent(mContext, ViewImageActivity.class);
-                int itemPosition = getLayoutPosition();
-                i.putExtra("i_position", itemPosition);
-                i.putExtra("s_campus_name", mCampus.get(position).getCampus_name());
-                i.putExtra("i_campus_image", mCampus.get(position).getCampus_image());
-                mContext.startActivity(i);
-            });
+            ivCampusImage = itemView.findViewById(R.id.iv_campus);
+            tvCampusName = itemView.findViewById(R.id.tv_campus);
+            vGap = itemView.findViewById(R.id.v_gap);
 
         }
 

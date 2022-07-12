@@ -5,25 +5,31 @@ public class CampusModel {
     private int campus_image;
     private String campus_name;
 
-    public CampusModel(int campus_image, String campus_name) {
-        this.campus_image = campus_image;
-        this.campus_name = campus_name;
+    public CampusModel()
+    {
+
     }
 
-    public int getCampus_image() {
+    public CampusModel(final int campus_image, final String campus_name)
+    {
+
+        this.campus_image = campus_image;
+        this.campus_name = campus_name;
+
+    }
+
+    public int getCampus_image()
+    {
+
         return campus_image;
+
     }
 
-    public void setCampus_image(int campus_image) {
-        this.campus_image = campus_image;
-    }
+    public String getCampus_name()
+    {
 
-    public String getCampus_name() {
         return campus_name;
-    }
 
-    public void setCampus_name(String campus_name) {
-        this.campus_name = campus_name;
     }
 
 }
