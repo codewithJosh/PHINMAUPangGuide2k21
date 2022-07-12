@@ -20,15 +20,13 @@ public class PaymentActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         btnBack = findViewById(R.id.btn_back);
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         btnBack.setOnClickListener(v -> onBackPressed());
 

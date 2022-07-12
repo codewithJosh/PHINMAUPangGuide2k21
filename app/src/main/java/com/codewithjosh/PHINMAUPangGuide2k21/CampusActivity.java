@@ -31,16 +31,14 @@ public class CampusActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         btnBack = findViewById(R.id.btn_back);
         recyclerCampus = findViewById(R.id.recycler_campus);
 
     }
 
-    private void initRecyclerView()
-    {
+    private void initRecyclerView() {
 
         recyclerCampus.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerCampus.setItemAnimator(new DefaultItemAnimator());
@@ -48,8 +46,7 @@ public class CampusActivity extends AppCompatActivity {
 
     }
 
-    private void loadCampuses()
-    {
+    private void loadCampuses() {
 
         final ArrayList<CampusModel> campuses = new ArrayList<>();
         campuses.add(new CampusModel(R.drawable.img_campus, "CAMPUS"));
@@ -65,8 +62,7 @@ public class CampusActivity extends AppCompatActivity {
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         btnBack.setOnClickListener(v -> onBackPressed());
 

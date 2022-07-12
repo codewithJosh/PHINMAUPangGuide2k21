@@ -73,8 +73,7 @@ public class CampusAdapter extends RecyclerView.Adapter<CampusAdapter.ViewHolder
 
     }
 
-    private void initSharedPref()
-    {
+    private void initSharedPref() {
 
         editor = context.getSharedPreferences("user", Context.MODE_PRIVATE).edit();
 

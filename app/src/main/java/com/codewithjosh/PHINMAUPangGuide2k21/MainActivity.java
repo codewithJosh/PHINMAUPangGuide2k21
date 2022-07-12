@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.color_brunswick_green));
 
@@ -30,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         navHome.setOnClickListener(v -> {
 

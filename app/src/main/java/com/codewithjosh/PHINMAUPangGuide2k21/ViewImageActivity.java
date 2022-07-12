@@ -31,8 +31,7 @@ public class ViewImageActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         btnBack = findViewById(R.id.btn_back);
         ivCampusImage = findViewById(R.id.iv_campus_image);
@@ -40,15 +39,13 @@ public class ViewImageActivity extends AppCompatActivity {
 
     }
 
-    private void initSharedPref()
-    {
+    private void initSharedPref() {
 
         sharedPref = getSharedPreferences("user", MODE_PRIVATE);
 
     }
 
-    private void load()
-    {
+    private void load() {
 
         campusId = sharedPref.getInt("campus_id", MODE_PRIVATE);
         campusImage = sharedPref.getInt("campus_image", MODE_PRIVATE);
@@ -56,13 +53,13 @@ public class ViewImageActivity extends AppCompatActivity {
 
     }
 
-    private void build()
-    {
+    private void build() {
 
         tvCampusName.setText(campusName);
         ivCampusImage.setImageResource(campusImage);
 
-        if (campusId % 2 == 0) tvCampusName.setTextColor(getResources().getColor(R.color.color_space_cadet));
+        if (campusId % 2 == 0)
+            tvCampusName.setTextColor(getResources().getColor(R.color.color_space_cadet));
 
         btnBack.setOnClickListener(v -> onBackPressed());
 

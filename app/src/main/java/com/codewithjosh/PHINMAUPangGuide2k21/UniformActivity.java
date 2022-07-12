@@ -29,8 +29,7 @@ public class UniformActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         btnBack = findViewById(R.id.btn_back);
         navCEA = findViewById(R.id.nav_c_e_a);
@@ -41,8 +40,7 @@ public class UniformActivity extends AppCompatActivity {
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         btnBack.setOnClickListener(v -> onBackPressed());
 

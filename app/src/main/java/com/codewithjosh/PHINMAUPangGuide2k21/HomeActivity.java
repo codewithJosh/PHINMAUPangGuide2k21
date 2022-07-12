@@ -24,8 +24,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         navCampus = findViewById(R.id.nav_campus);
         navEnrollment = findViewById(R.id.nav_enrollment);
@@ -34,8 +33,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         navCampus.setOnClickListener(v -> startActivity(new Intent(this, CampusActivity.class)));
 

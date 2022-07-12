@@ -26,8 +26,7 @@ public class EnrollmentActivity extends AppCompatActivity {
 
     }
 
-    private void initViews()
-    {
+    private void initViews() {
 
         btnBack = findViewById(R.id.btn_back);
         navEnrollment = findViewById(R.id.nav_enrollment);
@@ -35,8 +34,7 @@ public class EnrollmentActivity extends AppCompatActivity {
 
     }
 
-    private void buildButtons()
-    {
+    private void buildButtons() {
 
         btnBack.setOnClickListener(v -> onBackPressed());
 
