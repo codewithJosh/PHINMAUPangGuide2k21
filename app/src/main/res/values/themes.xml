@@ -1,16 +1,16 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.PHINMAUPangGuide" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorDarkSpringGreen</item>
+        <item name="colorPrimary">@color/color_dark_spring_green</item>
         <item name="colorPrimaryVariant">?attr/colorPrimary</item>
-        <item name="colorOnPrimary">@color/colorWhite_FF</item>
+        <item name="colorOnPrimary">@color/color_white_ff</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorSpaceCadet</item>
+        <item name="colorSecondary">@color/color_space_cadet</item>
         <item name="colorSecondaryVariant">?attr/colorSecondary</item>
-        <item name="colorOnSecondary">@color/colorBlack_FF</item>
+        <item name="colorOnSecondary">@color/color_black_ff</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

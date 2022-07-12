@@ -35,7 +35,7 @@
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_header_main" />
+            app:layout_constraintTop_toBottomOf="@id/iv_header_main" />
 
         <TextView
             android:id="@+id/tv_phinma"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Making lives better through education"
-            android:textColor="@color/colorGray"
+            android:textColor="@color/color_gray"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,11 +74,10 @@
         android:textAllCaps="false"
         android:textColor="?attr/colorPrimary"
         android:textSize="14sp"
-        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/iv_under_circle" />
+        app:layout_constraintTop_toTopOf="@id/iv_under_circle" />
 
     <ImageView
         android:id="@+id/iv_under_circle"

@@ -11,23 +11,36 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EnrollmentActivity extends AppCompatActivity {
 
-    ImageButton btn_back;
-    TextView nav_enrollment, nav_proof;
+    ImageButton btnBack;
+    TextView navEnrollment;
+    TextView navProof;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enrollment);
 
-        btn_back = findViewById(R.id.btn_back);
-        nav_enrollment = findViewById(R.id.nav_enrollment);
-        nav_proof = findViewById(R.id.nav_proof);
+        initViews();
+        buildButtons();
 
-        btn_back.setOnClickListener(v -> onBackPressed());
+    }
 
-        nav_enrollment.setOnClickListener(v -> goToURL(nav_enrollment));
+    private void initViews() {
 
-        nav_proof.setOnClickListener(v -> goToURL(nav_proof));
+        btnBack = findViewById(R.id.btn_back);
+        navEnrollment = findViewById(R.id.nav_enrollment);
+        navProof = findViewById(R.id.nav_proof);
+
+    }
+
+    private void buildButtons() {
+
+        btnBack.setOnClickListener(v -> onBackPressed());
+
+        navEnrollment.setOnClickListener(v -> goToURL(navEnrollment));
+
+        navProof.setOnClickListener(v -> goToURL(navProof));
 
     }
 
@@ -35,10 +48,10 @@ public class EnrollmentActivity extends AppCompatActivity {
 
         tv.setPaintFlags(tv.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        final String s = tv.getText().toString();
+        final String url = tv.getText().toString();
 
-        Uri uri = Uri.parse(s);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        final Uri uri = Uri.parse(url);
+        final Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 
     }
